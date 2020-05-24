@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  background: url(../img/photo-1519170395244-dfb1bb988508.jpg);
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+}
+
+body #cards {
+  margin: auto;
+  height: 100%;
+  width: 42%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #cards #card {
+  margin-top: 10px;
+  height: 25vh;
+  width: 8vw;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 1px 4px white;
+          box-shadow: 2px 1px 4px white;
+  background-image: url(../img/27bf478a3400002b729b23f275fddbf7.gif);
+  background-position: center;
+  background-size: cover;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+body #cards #card h3 {
+  color: red;
+  margin: 0;
+  font-size: 1.3em;
+}
+
+body #erg,
+body #hy,
+body #hy1 {
+  background-color: rgba(0, 0, 0, 0.308);
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 7px;
+}
+
+body #ref,
+body button,
+body #refH,
+body #back {
+  position: absolute;
+  left: 2%;
+  top: 3%;
+  width: 6vw;
+  height: 12vh;
+  font-weight: bold;
+  font-size: 1.6em;
+  color: white;
+  text-align: center;
+  -webkit-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+  border: 2px solid red;
+  border-top-left-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.425);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: none;
+  cursor: pointer;
+}
+
+body #ref:active,
+body button:active,
+body #refH:active,
+body #back:active {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 100%;
+}
+
+body #ref:focus,
+body button:focus,
+body #refH:focus,
+body #back:focus {
+  outline: none;
+}
+
+body #hy {
+  position: absolute;
+  right: 7%;
+  top: 10%;
+  background: none;
+  font-size: 4em;
+  width: 19.8vw;
+}
+
+body #hy1 {
+  position: absolute;
+  left: 7%;
+  top: 10%;
+  font-size: 4em;
+  background: none;
+  width: 19.8vw;
+}
+
+body #body1 {
+  margin: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+body button {
+  display: block;
+  font-size: 150%;
+}
+
+body label {
+  background-color: rgba(0, 0, 0, 0.308);
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  width: 90%;
+  margin-left: 10px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 7px;
+}
+
+body label select {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.308);
+  color: white;
+  font-size: 0.5em;
+  text-align: center;
+  width: 90%;
+  margin-left: 10px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 7px;
+}
+
+body label select option {
+  background-color: rgba(51, 25, 25, 0.603);
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  width: 90%;
+  margin-left: 10px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+  border-radius: 7px;
+}
+
+body #refH {
+  position: absolute;
+  left: 10%;
+  display: block;
+}
+
+body #back {
+  position: absolute;
+  left: 18%;
+  display: block;
+}
+
+body #backG {
+  position: absolute;
+  top: 85%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+body a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=game.css.map */

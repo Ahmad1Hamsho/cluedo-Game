@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>cluedo-spiel</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script>
+      function passvalues() {
+        var userName = document.getElementById("userName").value;
+        localStorage.setItem("textvalue", userName);
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="logo">Cluedo</h1>
+    <form action="./assets/pages/game.html">
+      <label for=""
+        >Name: <input type="text" name="" id="userName" required
+      /></label>
+      <input type="submit" value="Easy" onclick="passvalues()" />
+      <button id="hard"><a href="./assets/pages/gameH.html">Hard</a></button>
+    </form>
+  </body>
+</html>
