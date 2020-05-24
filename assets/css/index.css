@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bonbon&display=swap");
 body {
-  background: url(/assets/img/photo-1543128801-5e0c34a1fdc5.jpg);
+  background: url(../img/photo-1543128801-5e0c34a1fdc5.jpg);
   background-repeat: no-repeat no-repeat;
   background-size: cover;
 }

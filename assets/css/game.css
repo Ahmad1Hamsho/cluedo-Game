@@ -13,9 +13,9 @@ body #cards {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 body #cards #card {
@@ -24,7 +24,7 @@ body #cards #card {
   width: 8vw;
   border-radius: 5px;
   -webkit-box-shadow: 2px 1px 4px white;
-          box-shadow: 2px 1px 4px white;
+  box-shadow: 2px 1px 4px white;
   background-image: url(../img/27bf478a3400002b729b23f275fddbf7.gif);
   background-position: center;
   background-size: cover;
@@ -69,7 +69,7 @@ body #back {
   color: white;
   text-align: center;
   -webkit-transform: rotate(-55deg);
-          transform: rotate(-55deg);
+  transform: rotate(-55deg);
   border: 2px solid red;
   border-top-left-radius: 50%;
   background-color: rgba(255, 0, 0, 0.425);
@@ -120,10 +120,10 @@ body #body1 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 70vh;
 }
 
@@ -185,7 +185,7 @@ body #backG {
   position: absolute;
   top: 85%;
   -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 body a {
