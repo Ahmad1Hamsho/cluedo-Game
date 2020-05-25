@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bonbon&display=swap");
+@font-face {
+  font-family: "shlop";
+  src: url("../fonts/shlop/shlop\ rg.ttf");
+}
 body {
   background-image: url(../img/photo-1543128801-5e0c34a1fdc5.jpg);
   background-repeat: no-repeat no-repeat;
@@ -8,20 +11,20 @@ form {
   width: 100%;
 }
 #logo {
-  font-size: 9em;
+  font-size: 11em;
   margin-left: 9%;
   font-weight: bolder;
-  color: rgb(255, 0, 0);
+  color: rgba(255, 0, 0, 0.794);
   text-shadow: 4px 4px 7px rgb(155, 121, 121);
-  font-family: "Bonbon", cursive;
+  font-family: "shlop";
 }
 label {
-  font-size: 6em;
-  margin-left: 26%;
+  font-size: 10em;
+  margin-left: 27%;
   font-weight: bolder;
   color: rgb(255, 255, 255);
-  text-shadow: 6px 6px 20px rgb(255, 0, 0);
-  font-family: "Bonbon", cursive;
+  text-shadow: 6px 6px 20px rgba(255, 0, 0, 0.657);
+  font-family: "shlop";
   animation-name: la;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -39,10 +42,10 @@ label {
 }
 input[type="text"] {
   position: absolute;
-  top: 49%;
-  margin-left: 5px;
-  width: 20%;
-  height: 6vh;
+  top: 65%;
+  margin-left: -1%;
+  width: 24%;
+  height: 8vh;
   border-radius: 0px 0 100% 0;
   /* border: 1px dashed red; */
   box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.3),
@@ -54,8 +57,7 @@ input[type="text"] {
 input[type="submit"],
 button {
   position: relative;
-  left: 19%;
-  top: 19px;
+  left: 21.5%;
   width: 5vw;
   height: 10vh;
   transform: rotate(-55deg);
@@ -93,6 +95,6 @@ a {
 }
 button {
   position: relative;
-  top: 116px;
-  left: 15%;
+  top: 95px;
+  left: 18%;
 }

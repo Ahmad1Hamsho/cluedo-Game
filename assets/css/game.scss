@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "shlop";
+  src: url("../fonts/shlop/shlop\ rg.ttf");
+}
 body {
   margin: 0;
   background: url(../img/photo-1519170395244-dfb1bb988508.jpg);
@@ -109,6 +113,7 @@ body {
     font-size: 4em;
     text-align: center;
     width: 90%;
+    font-family: "shlop";
     margin-left: 10px;
     font-weight: bolder;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
