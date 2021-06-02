@@ -180,3 +180,4 @@ for (const cardItem of card) {
 function ref() {
   window.location.reload();
 }
+console.log(rightCard);

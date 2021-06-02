@@ -207,7 +207,4 @@ if (suspectsS[suspectsS.selectedIndex].value == "Jacob") {
 function ref() {
   window.location.reload();
 }
-
-console.log(rS.firstName);
-console.log(rW.name);
-console.log(rR.name);
+console.log(num);
