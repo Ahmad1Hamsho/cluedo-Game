@@ -129,21 +129,22 @@ const cards = document.getElementById("cards");
 const refr = document.getElementById("ref");
 const card = document.querySelectorAll("#card");
 let num = 0;
+
 for (const cardItem of card) {
   var rightCard = Math.round(Math.random() * card.length - 1);
+
   for (var i = 0; i < card.length; i++) {
     const rS = suspectsArray[Math.floor(Math.random() * suspectsArray.length)];
     const rW = weaponsArray[Math.floor(Math.random() * weaponsArray.length)];
     const rR = roomsArray[Math.floor(Math.random() * roomsArray.length)];
-    console.log(rS.firstName);
-    console.log(rS.lastName);
-    console.log(rW.name);
-    console.log(rW.weight);
-    console.log(rR.name);
-    cardItem.innerHTML = `Do you think <h3>${rS.firstName} ${rS.lastName}</h3> killed Mr. Boddy in the ${rR.name} with a ${rW.name} ${rW.weight} ?`;
+
+    cardItem.innerHTML = `Do you think <h3>${rS.firstName} ${rS.lastName}</h3> killed Mr. Boddy in the <h3>${rR.name}</h3> with a <h3>${rW.name} ${rW.weight}</h3> ?`;
+
     card[i].addEventListener("click", function () {
       num = parseInt(num) + parseInt(1);
-      console.log("num");
+      const rightKillerName = card[rightCard].childNodes[1].innerHTML;
+      const rightPlace = card[rightCard].childNodes[3].innerHTML;
+      const rightWeapons = card[rightCard].childNodes[5].innerHTML;
       if (this === card[rightCard]) {
         audioR.play();
         userName01.style.display = "none";
@@ -153,7 +154,7 @@ for (const cardItem of card) {
         erg.style.top = "40%";
         erg.style.left = "4%";
         refr.style.display = "block";
-        erg.innerHTML = `Yeah ${userName1} that's right ${rS.firstName} ${rS.lastName} killed Mr. Boddy using the ${rW.name} ${rW.weight} in the ${rR.name} 🧛‍♀️`;
+        erg.innerHTML = `Yeah ${userName1} that's right ${rightKillerName} killed Mr. Boddy using the ${rightWeapons} in the ${rightPlace} 🧛‍♀️`;
       } else if (this !== card[rightCard] && num <= 15) {
         audioX.play();
         erg.innerHTML = `No😨, this is wrong. In order to avoid accusing innocent people, we asked Detective Ahmad🕵️‍♂️to help us and was able to discover the weapon with which the crime took place. the weapon is (${rW.name})`;
@@ -179,4 +180,3 @@ for (const cardItem of card) {
 function ref() {
   window.location.reload();
 }
-console.log(rightCard);
